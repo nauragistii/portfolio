@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Nauragisti</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Naura Agisti</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Naura Agisti</h1>
+      <p class="section__text__p2">Junior Backend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/ola.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='https://wa.me/6282246070814'">
+          Contact Me
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/naura-agisti-suhariyanto-a0452b284/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/nauragistii'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="text-container">
+          <p>
+            I am a third-semester Software Engineering student at IDN Polytechnic with a strong interest in backend
+            development, especially using PHP and the Laravel framework. I possess soft skills in problem-solving and
+            teamwork, and I am proficient in MS Word and Excel.
+          </p>
+        </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>1 years <br />Fullstack Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Politeknik IDN <br> Software Engineering</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Flutter</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Laravel</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MySql</h3>
+                <p>Intermediate</p>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/MockUpmobile/ecom.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Ui e-commerce</h2>
+          <div class="btn-container">
+            <p>
+              A UI design for a cake shop e-commerce app built using Flutter. <br>
+              Features: <br>
+              1. Contains a Row <br>
+              2. Detail Page on Click <br>
+              3. AppBar <br>
+              4. Profile Page
+            </p>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/MockUpmobile/ticket.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Ticketing App</h2>
+          <div class="btn-container">
+            <p>A ticketing application built with Laravel, and implemented using BLoC<br>
+
+              <br>
+              Main Features: <br>
+              1. Scan Barcode Bluetooth <br>
+              2. Print Receipt (Struk) <br>
+              3. Bloc Implementation <br>
+              4. Update Profile
+            </p>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/MockUpmobile/notes.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">UI Notes</h2>
+          <div class="btn-container">
+            <p>
+              A notes application for a notes app built with Laravel, and implemented using BLoC<br>
+              Features: <br>
+              1. Add notes <br>
+              2. Use avatar <br>
+              3. Login <br>
+              4. Search <br>
+            </p>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/MockUpmobile/chat.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">UI Chit Chat</h2>
+          <div class="btn-container">
+            <p>
+              A UI design for a chit-chat app inspired by WhatsApp and Telegram, built with Flutter. <br>
+              Includes: <br>
+              1. Log Call <br>
+              2. Home page Chat <br>
+              3. Status page <br>
+
+            </p>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/MockUpmobile/newsip.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">News App</h2>
+          <div class="btn-container">
+            <p>
+              A news application built with Flutter, Laravel, and implemented using BLoC.
+              <br>
+              Features:
+              <br>
+              1. Login and Register
+              <br>
+              2. Search and Filter
+              <br>
+              3. Follow
+              <br>
+              4. Like and Comment
+            </p>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/MockUpmobile/bankSha.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Bank Sha App</h2>
+          <div class="btn-container">
+            <p>
+              A bank application built with Flutter and Laravel Filament.
+              <br>
+              Features:
+              <br>
+              1. Login and Register
+              <br>
+              2. Top Up
+              <br>
+              3. Profile
+              <br>
+              4. Pin
+            </p>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/MockUpWeb/bookRoom.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Web Book Room</h2>
+          <div class="btn-container">
+            <p>
+              A website built with Tailwind and Laravel. <br>
+              Features:
+              <br>
+              1. Notifications
+              <br>
+              2. Login and Register
+              <br>
+              3. Submit Reviews
+            </p>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/MockUpWeb/math.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Mathematical Calculation using JavaScript</h2>
+          <div class="btn-container">
+            <p>
+              A simple web-based tool built with JavaScript to perform basic mathematical calculations such as
+              addition, subtraction, multiplication, and division.
+            </p>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/MockUpWeb/profile.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Profile Page using HTML and CSS</h2>
+          <div class="btn-container">
+            <p>
+              A personal profile page designed using HTML and styled with CSS.
+
+            </p>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/MockUpWeb/parallax.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Parallax Web</h2>
+          <div class="btn-container">
+            <p>
+              A website built with HTML, CSS, Javascript, and Parallax.
+            </p>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/MockUpWeb/filament.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Laravel Filament Project</h2>
+          <div class="btn-container">
+            <p>
+              A backend management system built using Laravel and Filament Admin. This project demonstrates my ability
+              to use Laravel’s admin panel tools to efficiently manage databases, CRUD operations, and authentication.
+            </p>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/MockUpWeb/login.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Login Page using HTML and CSS</h2>
+          <div class="btn-container">
+            <p>
+              A responsive login interface built with HTML and CSS, focusing on form design, input validation, and
+              user-friendly styling suitable for web applications.
+            </p>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/MockUpWeb/laracamp.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Laracamp Website using Bootstrap</h2>
+          <div class="btn-container">
+            <p>
+              A landing page for a fictional Laravel course platform called “Laracamp,” developed using Bootstrap for
+              fast, responsive design. It includes sections like course details, testimonials, and a registration form.
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/MockUpWeb/sekul.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">School Website using Bootstrap</h2>
+          <div class="btn-container">
+            <p>
+              A responsive school website built with Bootstrap, featuring sections such as academic programs,
+              announcements, extracurricular activities, and a contact form. This project showcases clean layout
+              structuring and component reusability.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=nauragisti@idn.ac.id"
+            target="_blank">Nauragisti@idn.ac.id</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/naura-agisti-suhariyanto-a0452b284/" target="_blank">Nauragisti</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Naura Agisti. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
